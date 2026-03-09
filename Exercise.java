@@ -28,19 +28,19 @@ public class Exercise
 
 
 
-        System.out.print("Enter number (-1 to stop): ");
+        System.out.print("Enter temperature (999 to stop): ");
 
-        int number = keyboard.nextInt();
+        int temperature = keyboard.nextInt();
 
-        int sum = 0;
+        int count = 0;
 
-        while(number != -1) {
-            sum += number;
+        while(temperature != 999) {
+            count = count + 1;
 
-            System.out.println("Enter number (-1 to stop): ");
-            number keyboard.nextInt();
+            System.out.println("Enter number (999 to stop): ");
+            temperature = keyboard.nextInt();
         }
-        System.out.println("The sum is " + sum);
+        System.out.println("You entered " + count + " temperatures");
         
     }
 }
